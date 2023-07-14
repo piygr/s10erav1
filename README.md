@@ -121,6 +121,80 @@ The file contains utility & helper functions needed for training & for evaluatin
 The file is an IPython notebook. The notebook imports helper functions from utils.py.
 The LRfinder has been used to find the Max LR. Multiple LR values were tried starting from 0.1 to 1e-8 to find that where the loss is lowest. Based on that the Max LR value is set to 3.20E-04.
 
+```
+Epoch 1 LR [3.2e-06]
+Test set: Average loss: 1.4072, Accuracy: 4903/10000 (49.03%)
+
+Epoch 2 LR [6.656000000000011e-05]
+Test set: Average loss: 1.1207, Accuracy: 5979/10000 (59.79%)
+
+Epoch 3 LR [0.0001299199999999999]
+Test set: Average loss: 0.9486, Accuracy: 6603/10000 (66.03%)
+
+Epoch 4 LR [0.00019328]
+Test set: Average loss: 0.7799, Accuracy: 7267/10000 (72.67%)
+
+Epoch 5 LR [0.0002566400000000001]
+Test set: Average loss: 0.7548, Accuracy: 7336/10000 (73.36%)
+
+Epoch 6 LR [0.00031999999999999986]
+Test set: Average loss: 0.6213, Accuracy: 7901/10000 (79.01%)
+
+Epoch 7 LR [0.0003033263157894737]
+Test set: Average loss: 0.6122, Accuracy: 7897/10000 (78.97%)
+
+Epoch 8 LR [0.0002866526315789474]
+Test set: Average loss: 0.5619, Accuracy: 8130/10000 (81.30%)
+
+Epoch 9 LR [0.0002699789473684211]
+Test set: Average loss: 0.4941, Accuracy: 8326/10000 (83.26%)
+
+Epoch 10 LR [0.0002533052631578948]
+Test set: Average loss: 0.4339, Accuracy: 8541/10000 (85.41%)
+
+Epoch 11 LR [0.0002366315789473684]
+Test set: Average loss: 0.4452, Accuracy: 8496/10000 (84.96%)
+
+Epoch 12 LR [0.00021995789473684213]
+Test set: Average loss: 0.4931, Accuracy: 8367/10000 (83.67%)
+
+Epoch 13 LR [0.0002032842105263158]
+Test set: Average loss: 0.4949, Accuracy: 8346/10000 (83.46%)
+
+Epoch 14 LR [0.00018661052631578954]
+Test set: Average loss: 0.3910, Accuracy: 8699/10000 (86.99%)
+
+Epoch 15 LR [0.0001699368421052631]
+Test set: Average loss: 0.4118, Accuracy: 8601/10000 (86.01%)
+
+Epoch 16 LR [0.00015326315789473684]
+Test set: Average loss: 0.4488, Accuracy: 8537/10000 (85.37%)
+
+Epoch 17 LR [0.0001365894736842106]
+Test set: Average loss: 0.3487, Accuracy: 8860/10000 (88.60%)
+
+Epoch 18 LR [0.00011991578947368415]
+Test set: Average loss: 0.3302, Accuracy: 8902/10000 (89.02%)
+
+Epoch 19 LR [0.0001032421052631579]
+Test set: Average loss: 0.3080, Accuracy: 8962/10000 (89.62%)
+
+Epoch 20 LR [8.656842105263165e-05]
+Test set: Average loss: 0.3482, Accuracy: 8859/10000 (88.59%)
+
+Epoch 21 LR [6.98947368421052e-05]
+Test set: Average loss: 0.2918, Accuracy: 9047/10000 (90.47%)
+
+Epoch 22 LR [5.3221052631578956e-05]
+Test set: Average loss: 0.2971, Accuracy: 9041/10000 (90.41%)
+
+Epoch 23 LR [3.6547368421052686e-05]
+Test set: Average loss: 0.2621, Accuracy: 9159/10000 (91.59%)
+
+Epoch 24 LR [1.9873684210526257e-05]
+Test set: Average loss: 0.2544, Accuracy: 9170/10000 (91.70%)
+```
+
 ## How to setup
 ### Prerequisits
 ```
