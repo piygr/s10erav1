@@ -32,7 +32,8 @@
 ------
 ## custom_resnet.py
 The file contains the custom resnet model as desired in the assignment. 
-Total number of trainable parameters = ~6.5M
+Total number of trainable parameters = ~6.5M.
+
 Here is the summary of the network -
 
 ```
@@ -118,8 +119,13 @@ CustomCIFAR10Dataset is created on top of CIFAR10 to take care of albumentation 
 The file contains utility & helper functions needed for training & for evaluating our model.
 
 ## S10.ipynb
-The file is an IPython notebook. The notebook imports helper functions from utils.py.
+The file is an IPython notebook.
 The LRfinder has been used to find the Max LR. Multiple LR values were tried starting from 0.1 to 1e-8 to find that where the loss is lowest. Based on that the Max LR value is set to 3.20E-04.
+
+**LRFinder**
+
+<img width="705" alt="Screenshot 2023-07-14 at 11 39 09 PM" src="https://github.com/piygr/s10erav1/assets/135162847/20d5404e-d580-4b50-b246-39b1292c40ab">
+
 
 ```
 Epoch 1 LR [3.2e-06]
