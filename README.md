@@ -30,6 +30,58 @@
 6. Target Accuracy: 90%
 
 ------
+## custom_resnet.py
+The file contains the custom resnet model as desired in the assignment. Here is the summary of the network -
+
+```
+----------------------------------------------------------------
+        Layer (type)               Output Shape         Param #
+================================================================
+            Conv2d-1           [-1, 64, 32, 32]           1,792
+       BatchNorm2d-2           [-1, 64, 32, 32]             128
+              ReLU-3           [-1, 64, 32, 32]               0
+         Dropout2d-4           [-1, 64, 32, 32]               0
+            Conv2d-5          [-1, 128, 32, 32]          73,856
+         MaxPool2d-6          [-1, 128, 16, 16]               0
+       BatchNorm2d-7          [-1, 128, 16, 16]             256
+              ReLU-8          [-1, 128, 16, 16]               0
+         Dropout2d-9          [-1, 128, 16, 16]               0
+           Conv2d-10          [-1, 128, 16, 16]         147,584
+      BatchNorm2d-11          [-1, 128, 16, 16]             256
+        Dropout2d-12          [-1, 128, 16, 16]               0
+           Conv2d-13          [-1, 128, 16, 16]         147,584
+      BatchNorm2d-14          [-1, 128, 16, 16]             256
+        Dropout2d-15          [-1, 128, 16, 16]               0
+           Conv2d-16          [-1, 256, 16, 16]         295,168
+        MaxPool2d-17            [-1, 256, 8, 8]               0
+      BatchNorm2d-18            [-1, 256, 8, 8]             512
+             ReLU-19            [-1, 256, 8, 8]               0
+        Dropout2d-20            [-1, 256, 8, 8]               0
+           Conv2d-21            [-1, 512, 8, 8]       1,180,160
+        MaxPool2d-22            [-1, 512, 4, 4]               0
+      BatchNorm2d-23            [-1, 512, 4, 4]           1,024
+             ReLU-24            [-1, 512, 4, 4]               0
+        Dropout2d-25            [-1, 512, 4, 4]               0
+           Conv2d-26            [-1, 512, 4, 4]       2,359,808
+      BatchNorm2d-27            [-1, 512, 4, 4]           1,024
+        Dropout2d-28            [-1, 512, 4, 4]               0
+           Conv2d-29            [-1, 512, 4, 4]       2,359,808
+      BatchNorm2d-30            [-1, 512, 4, 4]           1,024
+        Dropout2d-31            [-1, 512, 4, 4]               0
+        MaxPool2d-32            [-1, 512, 1, 1]               0
+           Linear-33                   [-1, 10]           5,130
+================================================================
+Total params: 6,575,370
+Trainable params: 6,575,370
+Non-trainable params: 0
+----------------------------------------------------------------
+Input size (MB): 0.01
+Forward/backward pass size (MB): 7.38
+Params size (MB): 25.08
+Estimated Total Size (MB): 32.47
+----------------------------------------------------------------
+```
+
 ## transforms.py
 The file contains trasforms which are applied to the input dataset as per the assignment requirement
 
