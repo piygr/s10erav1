@@ -31,16 +31,17 @@
 
 ------
 ## transforms.py
-The file contains albumentations trasforms which are applied to the input dataset
+The file contains trasforms which are applied to the input dataset as per the assignment requirement
 
 ## dataset.py
-CustomCIFAR10Dataset is created on top of CIFAR10 to take care of albumentation transform
+CustomCIFAR10Dataset is created on top of CIFAR10 to take care of albumentation + torchvision transforms
 
 ## utils.py
 The file contains utility & helper functions needed for training & for evaluating our model.
 
 ## S10.ipynb
 The file is an IPython notebook. The notebook imports helper functions from utils.py.
+The LRfinder has been used to find the Max LR. Multiple LR values were tried starting from 0.1 to 1e-8 to find that where the loss is lowest. Based on that the Max LR value is set to 3.20E-04.
 
 ## How to setup
 ### Prerequisits
